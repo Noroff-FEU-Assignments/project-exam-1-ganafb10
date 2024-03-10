@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentSlideIndex = 0;
 
   function fetchPosts() {
-    fetch("https://fascinating-malabi-5e49f3.netlify.app/wp-json/wp/v2/posts?_embed&per_page=5")
+    fetch("http://backoffice-wp.local/wp-json/wp/v2/posts?_embed&per_page=5")
       .then(response => response.json())
       .then(data => {
         carouselContainer.innerHTML = ''; // Clear previous posts
